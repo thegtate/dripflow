@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/1-d14ae308.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/faq.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <title>Faq</title>
+  <style>
+    #loading-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #0e0e0e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #loading-screen img {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body onLoad="startAnimations(); hideLoadingScreen()">
+  <div id="loading-screen">
+    <img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and .webp" alt="Loading...">
+  </div>
+  <div class="fixed">
+    <navbar id="nav">
+      <div class="navbar_container">
+        <div class="container-mobile">
+          <button id="btn-mobile"><span id="hamburger"></span></button>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and  (1).png" class="logo-mobile" alt="Logo MyDrugs"></a>
+          </div>
+        </div>
+        <ul id="menu">
+          <li class="home-mobile">
+            <a href="index.html"id="close">home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="shop.html" class="blue" id="close">shop</a>
+          </li>
+          <li class="navbar_items">
+            <a href="faq.html" class="green" id="close">faq</a>
+          </li>
+          <li id="logo-mobile">
+            <a href="index.html"><img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and  (1).png" id="logo-mobile" class="logo" alt="Logo MyDrugs"></a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red" id="close">contact</a>
+          </li>
+        </ul>
+      </div>
+    </navbar>
+  </div>
+
+  <div class="titulo-principal animate">
+    <h1>Frequently Asked Questions</h1>
+  </div>
+  <div class="container animate">
+    <div class="perguntas-faq">
+      <h2>How Can i purchase from you</h2>
+      <div class="paragrafos">
+        <p>you have to contact us on discord:dripflowclothing  and send us a screenshot of ANY product you want (We have almost everything you can request various products)or on our email:dripflowclothing@gmail.com we offer PayPal as the main payment method.</p>
+      </div>
+    </div>
+    <div class="perguntas-faq">
+      <h2> </h2>
+      <div class="paragrafos">
+        <p></p>
+      </div>
+    </div>
+    <div class="perguntas-faq">
+      <h2>How much time does it take for my order to arrive?</h2>
+      <div class="paragrafos">
+        <p>It won't take much,it depends on where we ship it also some days may variate on the time because our suppliers may be on holidays</p>
+      </div>
+    </div>
+    <div class="perguntas-faq">
+      <h2>Is any of this real?</h2>
+      <div class="paragrafos">
+        <p>yes these are 1:1 reps we offer the best quality and details at good prices thanks to our best suppliers in the sector</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/mobile.js"></script>
+  <script type="text/javascript">
+    function startAnimations() {
+      document.body.classList.add('animate');
+    }
+
+    function hideLoadingScreen() {
+      document.getElementById('loading-screen').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

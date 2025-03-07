@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap%27%27");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+.green {
+  color: #97fe01;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.blue:hover {
+  color: #00b4ff;
+}
+
+.purple:hover {
+  color: #c300ff;
+}
+
+.red:hover {
+  color: #ff3535;
+}
+
+body {
+  background: #0e0e0e;
+  text-align: center;
+  cursor: url("../img/logos/mdcursor.png"), auto;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+ul li {
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 80px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.container-mobile {
+  display: none;
+}
+
+.home-mobile {
+  display: none;
+}
+
+.fixed {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #0e0e0e;
+  z-index: 1;
+}
+
+.navbar_container {
+  align-items: center;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.titulo-principal h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.perguntas-faq {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 90px;
+  text-align: left;
+  line-height: 2.5em;
+}
+
+.container {
+  max-width: 960px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  font-size: 16.5px;
+}
+
+.paragrafos p {
+  font-style: "Poppins", sans-serif;
+  opacity: 0.5;
+  margin-top: 25px;
+  text-align: left;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  #nav ul {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    right: 0px;
+    background-color: #101010;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .container-mobile {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  .logo-mobile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 8px 16px;
+  }
+
+  .navbar_container {
+    display: flex;
+    margin: 0;
+  }
+
+  #menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 2.3rem;
+  }
+
+  #menu li:nth-child(1){
+    border-top: 1px solid grey;
+  }
+
+  #menu li:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    gap: 0.5rem;
+    z-index: 1100;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #nav button {
+    visibility: visible;
+  }
+
+  #nav ul li::after {
+    display: none;
+  }
+
+  .titulo-principal h1 {
+    font-size: 30px;
+  }
+
+  .perguntas-faq h2 {
+    font-size: 18px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .perguntas-faq p {
+    font-size: 14x;
+    width: 85%;
+    margin: 10px auto;
+  }
+
+  .home-mobile {
+    display: flex;
+  }
+
+  #logo-mobile {
+    display: none !important;
+  }
+}

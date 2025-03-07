@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/1-d14ae308.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <title>Contact</title>
+  <style>
+    #loading-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #0e0e0e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #loading-screen img {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body onLoad="startAnimations(); hideLoadingScreen()">
+  <div id="loading-screen">
+    <img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and .webp" alt="Loading...">
+  </div>
+  <div class="fixed">
+    <navbar id="nav">
+      <div class="navbar_container">
+        <div class="container-mobile">
+          <button id="btn-mobile"><span id="hamburger"></span></button>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and  (1).png" class="logo-mobile" alt="Logo MyDrugs"></a>
+          </div>
+        </div>
+        <ul id="menu">
+          <li class="home-mobile">
+            <a href="index.html" id="close">home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="shop.html" class="blue" id="close">shop</a>
+          </li>
+          <li class="navbar_items">
+            <a href="faq.html" class="green" id="close">faq</a>
+          </li>
+          <li id="logo-mobile">
+            <a href="index.html"><img src="./img/logos/DALL·E 2025-03-02 16.46.21 - A modern and stylish black and white logo with only the text 'DripFlow'. The design should have a sleek streetwear aesthetic with bold typography and  (1).png" id="logo-mobile" class="logo" alt="Logo MyDrugs"></a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red" id="close">contact</a>
+          </li>
+        </ul>
+      </div>
+    </navbar>
+  </div>
+
+  <div class="titulo-principal animate">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="container animate">
+    <form action="mailto:dripflowclothing@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="./js/mobile.js"></script>
+  <script type="text/javascript">
+    function startAnimations() {
+      document.body.classList.add('animate');
+    }
+
+    function hideLoadingScreen() {
+      document.getElementById('loading-screen').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
