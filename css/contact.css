@@ -32,8 +32,6 @@ body {
   background: #0e0e0e;
   text-align: center;
   cursor: url("../img/logos/mdcursor.png"), auto;
-  color: white;
-  font-family: 'Poppins', sans-serif;
 }
 
 .slide-show img {
@@ -66,7 +64,6 @@ ul li {
 
 .logo-mobile {
   display: none;
-  align-items: center;
 }
 
 .container-mobile {
@@ -89,71 +86,6 @@ ul li {
   margin-left: 50px;
   display: flex;
   justify-content: space-around;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-}
-
-#menu {
-  display: flex;
-  list-style: none;
-}
-
-#menu li {
-  margin: 0 20px;
-}
-
-#menu li a {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.titulo-principal {
-  margin-top: 100px;
-}
-
-.titulo-principal h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.container {
-  max-width: 960px;
-  margin: 50px auto;
-  text-align: left;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background: #ff8c00;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ff7000;
 }
 
 .card_shop2 {
@@ -174,7 +106,7 @@ button:hover {
   margin-bottom: 20px;
   font-style: italic;
   animation: changeColor 2s infinite;
-  font-family: "Poppins", sans-serif;
+  content: "DISPONIBILE"; /* Substitute COMING SOON and AVAILABLE NOW with DISPONIBILE */
 }
 
 @-webkit-keyframes changeColor {
@@ -283,6 +215,7 @@ button:hover {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
+  content: "DISPONIBILE"; /* Substitute COMING SOON and AVAILABLE NOW with DISPONIBILE */
 }
 
 .card_shop2 h2:after {
@@ -309,24 +242,23 @@ button:hover {
   margin: 0 auto 30px;
 }
 
-
 @media screen and (max-width: 600px) {
-.card_shop2 {
-  width: 85%;
-  height: auto;
-}
+  .card_shop2 {
+    width: 85%;
+    height: auto;
+  }
 
-.card_shop2 h1 {
-  font-size: 25px;
-}
+  .card_shop2 h1 {
+    font-size: 25px;
+  }
 
-.card_shop2 h2 {
-  font-size: 20px;
-}
+  .card_shop2 h2 {
+    font-size: 20px;
+  }
 
-.twitter, .discord, .linkedin {
- display: none; 
-}
+  .twitter, .discord, .linkedin {
+    display: none; 
+  }
 
   #logo-mobile {
     display: none !important;

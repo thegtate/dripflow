@@ -91,7 +91,7 @@ ul li {
   align-items: center;
   margin-left: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .container {
@@ -112,7 +112,6 @@ ul li {
 .card_shop img {
   width: 240px;
   height: 240px;
-  border-radius: 50%; /* Make the image round */
 }
 
 .card_shop {
@@ -123,7 +122,6 @@ ul li {
   height: 26rem;
   border-radius: 2rem;
   border: 3px solid white;
-  text-align: center; /* Center the text */
 }
 
 .card_shop h3 {
@@ -138,16 +136,10 @@ ul li {
   font-family: "Poppins", sans-serif;
 }
 
-.btc, .eth {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  margin: 5px;
-}
-
 .btc {
   background: #ff8c00dc;
   padding: 10px;
+  margin-right: 5px;
   border-radius: 15px;
 }
 
@@ -223,22 +215,6 @@ ul li {
   100% {
     color: green;
   }
-}
-
-.dall-e-logo {
-  width: 50px;
-  height: auto;
-  margin-left: 10px;
-}
-
-.logo-mobile {
-  display: flex;
-  align-items: center;
-}
-
-.card_shop img,
-.card_shop2 img {
-  border-radius: 15px;
 }
 
 @media screen and (max-width: 600px) {
