@@ -1,4 +1,4 @@
-# Code Citations
+ Code Citations
 
 ## License: BSD_3_Clause
 https://github.com/django-oscar/django-oscar/tree/a4776a7d79b865e61a0b83e38487aae2476522f7/src/oscar/templates/oscar/catalogue/partials/product.html
